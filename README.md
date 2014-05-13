@@ -4,18 +4,18 @@ Example config:
 
 ```TOML
 [InfluxDBOutput]
-message_matcher = 'TRUE'
+message_matcher = "TRUE"
 
-server = 'http://localhost:8086'
-database = 'db'
-username = 'user'
-password = 'pass'
+server = "http://localhost:8086"
+database = "db"
+username = "user"
+password = "pass"
 
 # InfluxDB connection timeout, in seconds
 response_header_timeout = 30
 
 # The default if series in the field_map is missing
-series = 'history'
+series = "history"
 
 # Use the Heka message Timestamp as the InfluxDB time; on by default
 use_heka_timestamp = true
@@ -28,9 +28,9 @@ flush_count = 10
 
 [InfluxDBOutput.field_map]
 # Map InfluxDB field names to Heka message field names
-payload = 'Payload'
-custom_field = 'CustomField'
+payload = "Payload"
+custom_field = "CustomField"
 
 # Special case for dynamic series name - falls back to series above
-series = 'Type'
+series = "Type"
 ```
