@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This probably no longer compiles. You should use the built-in [HTTPOutput](http://hekad.readthedocs.org/en/v0.7.0/config/outputs/index.html#httpoutput). There is even an [InfluxDB-specific encoder](http://hekad.readthedocs.org/en/v0.7.0/config/encoders/index.html#statmetric-influx-encoder) now.
+
 # [InfluxDB](http://influxdb.org/) Output for [Mozilla Heka](http://hekad.readthedocs.org/)
 
 Example config:
